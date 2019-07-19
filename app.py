@@ -14,8 +14,8 @@ def results():
     form = ProjectForm()
     if request.method == 'POST' and form.validate():
 
-        variable1 = request.form['variable1']
-        variable2 = request.form['variable2']
+        email = request.form['email']
+        password = request.form['password']
         variable3 = request.form['variable3']
         
         return redirect(url_for('project_result', variable1= variable1, variable2 = variable2,
