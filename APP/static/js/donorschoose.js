@@ -192,12 +192,19 @@ $.ajax({
   data: {'inputValue1' : inputValue1, 'inputValue2' : inputValue2, 'inputValue3' :inputValue3, 'inputValue4' : inputValue4},
   dataType: "json",
   success: function(response) {
-    console.log(response);
-  },
+    console.log(response[0]);
+    if (response[0] == "0") {
+      window.location.href = ("/negativeresults")
+}
+if (response[0] == "1") {
+  window.location.href = ("/positiveresults")
+}
+   },
   error: function(err) {
     console.log(err)
   } 
 })
+
 
 
 

@@ -40,12 +40,13 @@ def get_post():
       from sklearn.externals import joblib
       knn = joblib.load('static/knn.pk1')
       result = knn.predict(df)
-      if result == 1:
-         return redirect('/positiveresults')
-      else:
-         return redirect('/negativeresults')
+      
+      # if result == 1:
+      #    return redirect('/positiveresults')
+      # else:
+      #    return redirect('/negativeresults')
    
-   return render_template("positiveresults.html")
+      return str(result)
 @app.route("/positiveresults")
 def positiveresults():
 
