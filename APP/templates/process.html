@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
+​
 <head>
-
+​
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
+​
   <title>TeachersChoose - Process</title>
-
+​
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
@@ -17,13 +17,13 @@
   <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="static/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+​
   <!-- Custom styles for this template -->
   <link href="static/css/landing-page.min.css" rel="stylesheet">
-
+​
   </head>
 <!--Workflow Modal-->
-
+​
 <div class="modal fade" id="workflowModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -38,9 +38,9 @@
     </div>
   </div>
   </div>
-
+​
   <!--NLP Modal-->
-
+​
   <div class="modal fade" id="NLPModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -53,20 +53,18 @@
           <div class="modal-body">
             <h3> Natural Language Processing on Essays and Need Statements</h3>
             <p>NLP techniques including text classification, word frequency, and sentiment analysis were used to analyze the predictive values of "essays" and "need statements" (submitted by the teachers) on funding results. All the analysis were performed with 10% (113,828) of randomly selected data from the original database. </p>
-
-            <h4>Word Frequency Analysis</h4>
-            <img class="img-fluid rounded mb-4 mb-lg-0" src="static/img/venndiagram.jpg" style="width:100%">
-            <p>From the venn diagram, you can see that there aren't significant differences in word frequency between funded and not funded projects</p>
-          <h4>Conclusions</h4>
+​
+            <h4>Conclusions</h4>
           <p>Both Naïve Bayes and Linear SVC Text Classification test results showed low F1 scores with high “false positives”. Naïve Bayes weighted average F1 score was 0.57 while Linear SVC was 0.62. Based on these test results, it is determined that ‘essays’ are not a good predictor of whether project requests will be funded.</p>
-             <p> Keywords from need statements for funded and not funded projects were compared to explore their impact on funding results. Of the 500 most used words in both funded and not funded projects’ need statements, an overwhelming 448 or 90% words were shared by both lists. Therefore, need statements are also not a good predictor of whether project requests will be funded.</p>
-              <p>Sentiment analysis were performed on essays for all projects. Both funded and not funded projects averaged a highly positive sentiment compound score of 0.95, which indicates that most of the essays have a positive tone, and sentiment compound score is again not a good predictor of whether project requests will be funded.</p>
-              <p>In conclusion, all NLP analysis results are conclusive that data from written statements have no predictive value of funding success.¶</p>
+          <p> Word Frequency Analysis - Keywords from need statements for funded and not funded projects were compared to explore their impact on funding results. Of the 500 most used words in both funded and not funded projects’ need statements, an overwhelming 448 or 90% words were shared by both lists. From the venn diagram below, you can see that there aren't significant differences in word frequency between funded and not funded projects. Therefore, need statements are also not a good predictor of whether project requests will be funded.</p>
+          <img class="img-fluid rounded mb-4 mb-lg-0" src="static/img/venndiagram.jpg" style="width:70%">
+          <p>Sentiment analysis were performed on essays for all projects. Both funded and not funded projects averaged a highly positive sentiment compound score of 0.95, which indicates that most of the essays have a positive tone, and sentiment compound score is again not a good predictor of whether project requests will be funded.</p>
+              <p>In conclusion, all NLP analysis results are conclusive that data from written statements have no predictive value of funding success.</p>
           </div>
         </div>
         </div>
         </div>
-
+​
     <!--KNN Modal-->
     <div class="modal fade" id="KNNModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -78,10 +76,8 @@
               </button>
             </div>
             <div class="modal-body">
-              <h3> insert</h3>
-              <p>insert</p>
-              <h4>Word Frequency Analysis</h4>
-              <img class="img-fluid rounded mb-4 mb-lg-0" src="static/img/venndiagram.jpg" style="width:100%">
+              
+              <h3>K Nearest Neighbors Analysis</h4>
               <p></p>
               <p>After testing several different types of models, our group decided to use a K Nearest Neighbors (KNN) model. 
                 Subsequent testing revealed that school poverty level, student grade level, students reached, and amount of 
@@ -99,9 +95,9 @@
           </div>
           </div>
           </div>
-
+​
   <body>
-
+​
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar fixed-top">
           <div class="container-fluid">
@@ -130,11 +126,11 @@
             </div>
             
         </nav>
-
+​
     </body>
       <!-- Page Content -->
       <div class="container">
-
+​
         <!-- Heading Row -->
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
@@ -198,9 +194,10 @@
       </div>
       <!-- /.container -->
     
-
+​
     
       <!-- Bootstrap core JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="static/js/donorschoose.js"></script>
@@ -208,4 +205,3 @@
     </body>
     
     </html>
-    
