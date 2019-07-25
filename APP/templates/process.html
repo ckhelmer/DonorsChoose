@@ -11,15 +11,16 @@
   <title>TeachersChoose - Process</title>
 
   <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
-  <link href="css/landing-page.min.css" rel="stylesheet">
+  <link href="static/css/landing-page.min.css" rel="stylesheet">
 
   </head>
 <!--Workflow Modal-->
@@ -31,7 +32,7 @@
       <div class="modal-body">
        
      
-          <img class="img-fluid rounded mb-4 mb-lg-0" src="img/processflow2.jpg" alt="">
+          <img class="img-fluid rounded mb-4 mb-lg-0" src="static/img/processflow2.jpg" alt="">
       
       </div>
   
@@ -55,7 +56,7 @@
             <p>NLP techniques including text classification, word frequency, and sentiment analysis were used to analyze the predictive values of "essays" and "need statements" (submitted by the teachers) on funding results. All the analysis were performed with 10% (113,828) of randomly selected data from the original database. </p>
 
             <h4>Word Frequency Analysis</h4>
-            <img class="img-fluid rounded mb-4 mb-lg-0" src="img/venndiagram.jpg" style="width:100%">
+            <img class="img-fluid rounded mb-4 mb-lg-0" src="static/img/venndiagram.jpg" style="width:100%">
             <p>From the venn diagram, you can see that there aren't significant differences in word frequency between funded and not funded projects</p>
           <h4>Conclusions</h4>
           <p>Both Naïve Bayes and Linear SVC Text Classification test results showed low F1 scores with high “false positives”. Naïve Bayes weighted average F1 score was 0.57 while Linear SVC was 0.62. Based on these test results, it is determined that ‘essays’ are not a good predictor of whether project requests will be funded.</p>
@@ -81,7 +82,7 @@
               <h3> insert</h3>
               <p>insert</p>
               <h4>Word Frequency Analysis</h4>
-              <img class="img-fluid rounded mb-4 mb-lg-0" src="img/venndiagram.jpg" style="width:100%">
+              <img class="img-fluid rounded mb-4 mb-lg-0" src="static/img/venndiagram.jpg" style="width:100%">
               <p></p>
             <h4>Conclusions</h4>
             <p>insert</p>
@@ -96,7 +97,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar fixed-top">
           <div class="container-fluid">
               <div class="navbar-header">
-                <a class="navbar=brand" href="index.html">TeachersChoose</a>
+                <a class="navbar=brand" href="/">TeachersChoose</a>
               </div> 
               <button class = "navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class = "navbar-toggler-icon"></span>
@@ -108,10 +109,10 @@
                     <a href="https://www.donorschoose.org/" class = "nav-link">DonorsChoose</a>
                   </li>
                   <li class = "navbar-item">
-                    <a href = "process.html" class="nav-link">Process</a>
+                    <a href = "process" class="nav-link">Process</a>
                   </li>
                   <li class = "navbar-item">
-                    <a href = "team.html" class="nav-link">Team</a>
+                    <a href = "team" class="nav-link">Team</a>
                   </li>
                  
                 </ul>
@@ -128,7 +129,7 @@
         <!-- Heading Row -->
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
-            <img class="img-fluid rounded mb-4 mb-lg-0" src="img/bg-showcase-1.jpg" alt="">
+            <img class="img-fluid rounded mb-4 mb-lg-0" src="static/img/bg-showcase-1.jpg" alt="">
           </div>
           <!-- /.col-lg-8 -->
           <div class="col-lg-5">
@@ -191,9 +192,9 @@
 
     
       <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="donorschoose.js"></script>
+      <<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="static/js/donorschoose.js"></script>
     
     </body>
     
